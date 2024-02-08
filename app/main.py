@@ -57,6 +57,7 @@ class App:
         self.is_exploded = False
         self.bubbles = [Bubble() for _ in range(NUM_INITIAL_BUBBLES)]
 
+        pyxel.load("./sample.pyxres")
         pyxel.run(self.update, self.draw)
 
     def update(self):
